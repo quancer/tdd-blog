@@ -1,16 +1,17 @@
 import Link from "next/link";
-
+import { useRouter } from "next/router";
 export function Menu() {
+  const router = useRouter();
   return (
     <ul className="flex gap-10">
       <li>
-        <Link href="/">Home</Link>
+        <button onClick={() => router.push("/")}>Home</button>
       </li>
       <li>
-        <Link href="/Blog">Blog</Link>
+        <button onClick={() => router.push("/blog")}>Blog</button>
       </li>
       <li>
-        <Link href="/Contact">Contact</Link>
+        <button onClick={() => router.push("/contact")}>Contact</button>
       </li>
     </ul>
   );
