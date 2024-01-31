@@ -1,12 +1,12 @@
-import { AllBlog, Header, Showcase, Trending } from "@/components";
+import { AllBlog, Header, Highlight, Trending } from "@/components";
 
 export default function Home({ posts, allPost }) {
   console.log("post=", posts, " allpost=", allPost);
   // let b = `w-[516px] h-[600px]`;
   return (
     <div className="flex flex-col gap-25">
-      <Header />
-      <Showcase data={posts[0]} />
+      {/* <Header /> */}
+      <Highlight data={posts} />
       <Trending posts={posts} />
       <AllBlog posts={allPost} limit={9} />
     </div>

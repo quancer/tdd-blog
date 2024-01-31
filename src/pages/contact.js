@@ -3,7 +3,6 @@ import { Header } from "@/components";
 export default function Page({ posts }) {
   return (
     <div>
-      <Header />
       <div>{"contact"}</div>
     </div>
   );

@@ -8,7 +8,7 @@ export function Menu() {
         <button onClick={() => router.push("/")}>Home</button>
       </li>
       <li>
-        <button onClick={() => router.push("/blog")}>Blog</button>
+        <button onClick={() => router.push("/blog/")}>Blog</button>
       </li>
       <li>
         <button onClick={() => router.push("/contact")}>Contact</button>
